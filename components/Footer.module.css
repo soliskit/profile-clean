@@ -1,0 +1,12 @@
+.footer {
+  composes: glass from './Card.module.css';
+  --glass-blur: 12px;
+  --glass-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--text-tertiary);
+  font-size: 13px;
+}

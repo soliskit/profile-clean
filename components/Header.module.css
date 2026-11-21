@@ -1,0 +1,24 @@
+.header {
+  composes: glass from './Card.module.css';
+  --glass-blur: 20px;
+  --glass-radius: 24px;
+  padding: 40px 28px;
+  text-align: center;
+}
+
+.header:hover {
+  background: var(--glass-bg-hover);
+}
+
+.profilePhoto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 16px auto;
+  border: 2px solid var(--photo-border);
+  box-shadow: var(--photo-shadow);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
